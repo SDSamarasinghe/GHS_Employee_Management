@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router";
 import "./Store.css";
 
-const StoreProductSingle = ({ image, name, price, id }) => {
+const EmployeeCardSingle = ({ image, name, price, id }) => {
   //must check endpoint
     // const deleteProduct = async () => {
     //   const { status } = await axios.delete(
@@ -44,4 +44,4 @@ const StoreProductSingle = ({ image, name, price, id }) => {
   );
 };
 
-export default StoreProductSingle;
+export default EmployeeCardSingle;
