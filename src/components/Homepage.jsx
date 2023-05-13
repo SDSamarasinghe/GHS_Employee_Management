@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Carousel from 'react-bootstrap/Carousel';
-import StoreProductSingle from "./StoreProductSingle";
+import StoreProductSingle from "./EmployeeCardSingle";
 import bg1 from "./img/11.jpg"
 import bg2 from "./img/22.jpg"
 import bg3 from "./img/33.jpg"
@@ -129,15 +129,15 @@ const StoreHome = () => {
           </p>
         </h1>
         <div className="products-list row p-5">
-          {products &&
-            products.map((prod) => (
+          {users &&
+            users.map((user) => (
               <div className="col mt-4">
                 <StoreProductSingle
-                  key={prod.id}
-                  img={prod.image}
-                  title={prod.name}
-                  price={prod.price}
-                  id={prod.id}
+                  key={user.id}
+                  img={user.fullname}
+                  title={user.name}
+                  price={user.price}
+                  id={user.id}
                 />
               </div>
             ))}
